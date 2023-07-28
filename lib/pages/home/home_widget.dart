@@ -297,7 +297,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                     RegExp('[0-9]'))
                               ],
                               onChanged: (value) {
-                                _model.salaryController.text = '\$' + value;
                                 _model.salaryController!.selection = TextSelection.fromPosition(TextPosition(offset: _model.salaryController.text.length));
                                 _model.creditController.text = '\$' + _homecontroller.getcredit(value).toString(); // se podria usar intl para formatear el numero 
                               },

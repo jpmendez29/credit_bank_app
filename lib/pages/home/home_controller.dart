@@ -9,7 +9,7 @@ class home_controller extends GetxController {
 
 
   Future<double> getcredit(String salary) async {
-    double resultado = (double.parse(salary.replaceAll('.', '')) * 7) / 0.15;
+    double resultado = (double.parse(salary) * 7) / 0.15;
     return resultado;  
   }
 
