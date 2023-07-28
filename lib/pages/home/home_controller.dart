@@ -28,7 +28,7 @@ class home_controller extends GetxController {
       break;
     }
     
-    cuota.value = (credit * interest.value) / (1 - pow(1 + interest.value, numfee.value));
+    cuota.value = (credit * interest.value) / (1 - pow(1 + interest.value, int.parse(numfee)));
 
     credits.value = credit;
   }

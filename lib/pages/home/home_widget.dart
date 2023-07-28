@@ -298,7 +298,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                               ],
                               onChanged: (value) {
                                 _model.salaryController!.selection = TextSelection.fromPosition(TextPosition(offset: _model.salaryController.text.length));
-                                _model.creditController.text = '\$' + _homecontroller.getcredit(value).toString(); // se podria usar intl para formatear el numero 
+                                _model.creditController.text = ('\$ ${(double.parse(_model.salaryController.text) * 7) / 0.15}'); // se podria usar intl para formatear el numero 
                               },
                             ),
                           ),
